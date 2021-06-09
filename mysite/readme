@@ -1,0 +1,15 @@
+https://www.django.cn/article/show-4.html#buzhou
+配置方法
+
+然后进入/data/env/pyweb/bin
+启动虚拟环境：
+
+source activate
+
+#启动uwsgl
+uwsgi -x mysite.xml
+
+#uwsgi有没有启动成功,可以用下面的命令查看
+ps -ef|grep uwsgi
+#如果想重启uwsgi,先使用下面的命令杀掉进程,再启动uwsgi
+killall -9 uwsgi
